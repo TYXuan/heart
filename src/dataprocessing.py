@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 
 # Read csv into pandas DataFrame
-df = pd.read_csv(r'data\heart.csv')
+df = pd.read_csv(r'./data/heart.csv')
 
 # Cleaning up data, drop index 449 where 'RestingBP' < 60
 df=df.drop(df.index[449])
@@ -23,4 +23,4 @@ df['Cholesterol'] = np.where(zero_cholesterol_heartdisease_cond, mean_positive_c
 df.loc[df['Oldpeak'] < 0, 'Oldpeak'] = df['Oldpeak'] * -1
 
 # Save clean dataset
-df.to_csv(r'data\heart_clean.csv')
+df.to_csv(r'./data/heart_clean.csv')
