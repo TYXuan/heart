@@ -1,4 +1,4 @@
-# Heart Disease Predition
+# Heart Disease Prediction
 
 By Tan Yu Xuan
 
@@ -114,8 +114,8 @@ Comparing the scores from the training set and test set, there might be some ove
 #### a. Confusion Matrix
 |                | HeartDisease=0 | HeartDisease=1|
 |----------------|----------------|---------------|
-| HeartDisease=0 |       `62`     |       20      | 
-| HeartDisease=1 |        31      |      `71`     |
+| HeartDisease=0 |        62      |       20      | 
+| HeartDisease=1 |       `31`     |      `71`     |
 
 #### b. Classification Report
 
@@ -128,8 +128,8 @@ Comparing the scores from the training set and test set, there might be some ove
 #### a. Confusion Matrix
 |                | HeartDisease=0 | HeartDisease=1 |
 |----------------|----------------|----------------|
-| HeartDisease=0 |       `67`     |       15       | 
-| HeartDisease=1 |        20      |      `82`      |
+| HeartDisease=0 |        67      |       15       | 
+| HeartDisease=1 |       `20`     |      `82`      |
 
 #### b. Classification Report
 
@@ -142,8 +142,8 @@ Comparing the scores from the training set and test set, there might be some ove
 #### a. Confusion Matrix
 |                | HeartDisease=0 | HeartDisease=1 |
 |----------------|----------------|----------------|
-| HeartDisease=0 |      `70`      |       12       | 
-| HeartDisease=1 |       14       |      `88`      |
+| HeartDisease=0 |       70       |       12       | 
+| HeartDisease=1 |      `14`      |      `88`      |
 
 #### b. Classification Report
 
