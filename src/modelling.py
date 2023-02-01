@@ -5,9 +5,9 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.tree import DecisionTreeClassifier
 
-print('Importing dataset from data/...')
+print('Importing dataset from ./data/...')
 
-df = pd.read_csv('data/heart_clean.csv', index_col=[0])
+df = pd.read_csv('./data/heart_clean.csv', index_col=[0])
 
 print('Preprocessing dataset for predictions...')
 
@@ -28,7 +28,7 @@ slope_dict = {'Up':0, 'Flat':1, 'Down':2}
 df['ST_Slope'] = df['ST_Slope'].replace(slope_dict)
 
 # Import heart.csv dataset
-df_heart = pd.read_csv('data/heart.csv', index_col=[0])
+df_heart = pd.read_csv('./data/heart.csv', index_col=[0])
 df_heart.reset_index(drop=True, inplace = True)
 
 X = df.drop('HeartDisease', axis=1).values
