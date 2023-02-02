@@ -27,8 +27,8 @@ df['RestingECG'] = df['RestingECG'].replace(ecg_dict)
 slope_dict = {'Up':0, 'Flat':1, 'Down':2}
 df['ST_Slope'] = df['ST_Slope'].replace(slope_dict)
 
-# Import heart.csv dataset
-df_heart = pd.read_csv('./data/heart.csv', index_col=[0])
+# Import heart_clean.csv dataset
+df_heart = pd.read_csv('./data/heart_clean.csv', index_col=[0])
 df_heart.reset_index(drop=True, inplace = True)
 
 X = df.drop('HeartDisease', axis=1).values
